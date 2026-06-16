@@ -20,7 +20,7 @@
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     /* grain overlay */
@@ -210,6 +210,14 @@
       font-family: 'Cormorant Garamond', monospace;
     }
 
+    @media (max-width: 420px) {
+      .container { padding: 2rem 1.5rem; }
+      .title { margin-bottom: 1.8rem; }
+      .description { margin-bottom: 2rem; }
+      .divider { margin-bottom: 2rem; }
+      .composer { margin-bottom: 2.5rem; }
+    }
+
     @keyframes rise {
       from { opacity: 0; transform: translateY(14px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -223,8 +231,7 @@
     <h1 class="title">Längtan</h1>
 
     <p class="description">
-      Förstärk din upplevelse av utställningen med klanger<br>
-      som minner om våra drömmar, önskningar och vår längtan.
+      Förstärk din upplevelse av utställningen med klanger som minner om våra drömmar, önskningar och vår längtan.
     </p>
 
     <div class="divider"></div>
